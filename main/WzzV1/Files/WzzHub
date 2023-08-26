@@ -1,1 +1,549 @@
 -- This file was generated using Luraph Obfuscator v13.6.7
+local plr = game.Players.LocalPlayer
+
+-- [Creating Instances] --
+
+local FrameStroke = Instance.new("UIStroke")
+local FrameCorner = Instance.new("UICorner")
+
+local BtnStroke = Instance.new("UIStroke")
+local BtnCorner = Instance.new("UICorner")
+
+local Exploit = Instance.new("ScreenGui")
+
+-- [Creating Frames] --
+
+local MM2HUB = Instance.new("Frame")
+local Categories = Instance.new("Frame")
+local Tp = Instance.new("Frame")
+local Local = Instance.new("Frame")
+local Autofarm = Instance.new("Frame")
+local ESP = Instance.new("Frame")
+
+local HubsLegacy = Instance.new("Frame")
+local HubsPremium = Instance.new("Frame")
+local Options = Instance.new("Frame")
+
+-- [Creating Children] --
+
+local mm2Legacy = Instance.new("TextButton")
+local mm2Premium = Instance.new("TextButton")
+local Legacy = Instance.new("TextButton")
+local Premium = Instance.new("TextButton")
+
+local tpCat = Instance.new("TextButton")
+local ESPCat = Instance.new("TextButton")
+local AutofarmCat = Instance.new("TextButton")
+local localCat = Instance.new("TextButton")
+
+local tpMap = Instance.new("TextButton")
+local tpLobby = Instance.new("TextButton")
+local ESPBtn = Instance.new("TextButton")
+local AutofarmBtn = Instance.new("TextButton")
+local localSmoke = Instance.new("TextButton")
+local localFire = Instance.new("TextButton")
+
+local Title1 = Instance.new("TextLabel")
+local Title2 = Instance.new("TextLabel")
+local Title3 = Instance.new("TextLabel")
+local ESPTitle = Instance.new("TextLabel")
+local TpTitle = Instance.new("TextLabel")
+local AutofarmTitle = Instance.new("TextLabel")
+local LocalTitle = Instance.new("TextLabel")
+
+-- [Settings] --
+
+FrameStroke.Color = Color3.new(0.337255, 0.337255, 0.337255)
+FrameStroke.Thickness = 8
+
+BtnStroke.Color = Color3.new(0.337255, 0.337255, 0.337255)
+BtnStroke.Thickness = 4
+
+BtnStroke.ApplyStrokeMode= Enum.ApplyStrokeMode.Border
+
+Title1.Text = "WZZ Hub"
+Title2.Text = "WZZ Hub"
+Title3.Text = "WZZ Hub"
+
+Title1.Position = UDim2.new(0.266, 0,0.163, 0)
+Title1.TextScaled = true
+Title1.TextColor3 = Color3.new(1, 1, 1)
+Title1.Size = UDim2.new(0, 200,0, 50)
+Title1.BackgroundTransparency = 1
+
+Title2.Position = UDim2.new(0.157, 0,0.021, 0)
+Title2.TextScaled = true
+Title2.TextColor3 = Color3.new(1, 1, 1)
+Title2.Size = UDim2.new(0, 200,0, 50)
+Title2.BackgroundTransparency = 1
+
+Title3.Position = UDim2.new(0.157, 0,0.021, 0)
+Title3.TextScaled = true
+Title3.TextColor3 = Color3.new(1, 1, 1)
+Title3.Size = UDim2.new(0, 200,0, 50)
+Title3.BackgroundTransparency = 1
+
+ESPTitle.Text = "ESP"
+TpTitle.Text = "Teleport"
+AutofarmTitle.Text = "Autofarm"
+LocalTitle.Text = "Local"
+
+Title1.Text = "WZZ Hub"
+Title2.Text = "WZZ Hub"
+Title3.Text = "WZZ Hub"
+
+LocalTitle.Position = UDim2.new(0.266, 0,0.163, 0)
+LocalTitle.TextScaled = true
+LocalTitle.TextColor3 = Color3.new(1, 1, 1)
+LocalTitle.Size = UDim2.new(0, 200,0, 50)
+LocalTitle.BackgroundTransparency = 1
+
+AutofarmTitle.Position = UDim2.new(0.157, 0,0.021, 0)
+AutofarmTitle.TextScaled = true
+AutofarmTitle.TextColor3 = Color3.new(1, 1, 1)
+AutofarmTitle.Size = UDim2.new(0, 200,0, 50)
+AutofarmTitle.BackgroundTransparency = 1
+
+TpTitle.Position = UDim2.new(0.157, 0,0.021, 0)
+TpTitle.TextScaled = true
+TpTitle.TextColor3 = Color3.new(1, 1, 1)
+TpTitle.Size = UDim2.new(0, 200,0, 50)
+TpTitle.BackgroundTransparency = 1
+
+ESPTitle.Position = UDim2.new(0.157, 0,0.021, 0)
+ESPTitle.TextScaled = true
+ESPTitle.TextColor3 = Color3.new(1, 1, 1)
+ESPTitle.Size = UDim2.new(0, 200,0, 50)
+ESPTitle.BackgroundTransparency = 1
+
+ESPTitle.TextColor3 = Color3.new(1,1,1)
+ESPTitle.Position = UDim2.new(0.098, 0,0.048, 0)
+ESPTitle.Size = UDim2.new(0, 176,0, 34)
+TpTitle.TextColor3 = Color3.new(1,1,1)
+TpTitle.Position = UDim2.new(0.098, 0,0.048, 0)
+TpTitle.Size = UDim2.new(0, 176,0, 34)
+AutofarmTitle.TextColor3 = Color3.new(1,1,1)
+AutofarmTitle.Position = UDim2.new(0.098, 0,0.048, 0)
+AutofarmTitle.Size = UDim2.new(0, 176,0, 34)
+LocalTitle.TextColor3 = Color3.new(1,1,1)
+LocalTitle.Position = UDim2.new(0.098, 0,0.048, 0)
+LocalTitle.Size = UDim2.new(0, 176,0, 34)
+
+Legacy.Text = "Legacy"
+Premium.Text = "Premium"
+mm2Legacy.Text = "MM2 Hub"
+mm2Premium.Text = "MM2 Hub"
+
+mm2Premium.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+mm2Legacy.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+
+mm2Legacy.Font = Enum.Font.GothamBold
+mm2Legacy.TextSize = 30
+mm2Legacy.TextColor3 = Color3.new(1, 1, 1)
+mm2Premium.Font = Enum.Font.GothamBold
+mm2Premium.TextSize = 30
+mm2Premium.TextColor3 = Color3.new(1, 1, 1)
+
+Premium.Font = Enum.Font.GothamBold
+Legacy.Font = Enum.Font.GothamBold
+Legacy.TextScaled = true
+Premium.TextScaled = true
+
+Legacy.TextColor3 = Color3.new(1, 1, 1)
+Premium.TextColor3 = Color3.new(1, 1, 1)
+
+Legacy.Position = UDim2.new(0.082, 0,0.572, 0)
+Legacy.Size = UDim2.new(0, 173,0, 45)
+Legacy.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Premium.Position = UDim2.new(0.512, 0,0.572, 0)
+Premium.Size = UDim2.new(0, 173,0, 45)
+Premium.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+
+Options.Size = UDim2.new(0, 428,0, 215)
+Options.Position = UDim2.new(0.372, 0,0.329, 0)
+Options.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+
+HubsLegacy.Size = UDim2.new(0, 293,0, 487)
+HubsLegacy.Position = UDim2.new(0.779, 0,0.112, 0)
+HubsLegacy.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+
+HubsPremium.Size = UDim2.new(0, 293,0, 487)
+HubsPremium.Position = UDim2.new(0.779, 0,0.112, 0)
+HubsPremium.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+
+MM2HUB.Size = UDim2.new(0, 391,0, 394)
+MM2HUB.Position = UDim2.new(0.021, 0,0.185, 0)
+MM2HUB.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+
+Tp.Size = UDim2.new(0, 220,0, 366)
+Tp.Position = UDim2.new(0.033, 0,0.036, 0)
+Tp.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Autofarm.Size = UDim2.new(0, 220,0, 366)
+Autofarm.Position = UDim2.new(0.033, 0,0.036, 0)
+Autofarm.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ESP.Size = UDim2.new(0, 220,0, 366)
+ESP.Position = UDim2.new(0.033, 0,0.036, 0)
+ESP.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Local.Size = UDim2.new(0, 220,0, 366)
+Local.Position = UDim2.new(0.033, 0,0.036, 0)
+Local.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Categories.Size = UDim2.new(0, 141,0, 366)
+Categories.Position = UDim2.new(0.616, 0,0.036, 0)
+Categories.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+
+tpCat.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+tpCat.Size = UDim2.new(0, 118,0, 32)
+tpCat.Position = UDim2.new(0.076, 0,0.258, 0)
+tpCat.TextSize = 20
+tpCat.TextColor3 = Color3.new(1,1,1)
+tpCat.RichText = true
+tpCat.TextWrapped = true
+
+ESPCat.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ESPCat.Size = UDim2.new(0, 118,0, 32)
+ESPCat.Position = UDim2.new(0.076, 0,0.534, 0)
+ESPCat.TextSize = 25
+ESPCat.TextColor3 = Color3.new(1,1,1)
+ESPCat.RichText = true
+ESPCat.TextWrapped = true
+
+AutofarmCat.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+AutofarmCat.Size = UDim2.new(0, 118,0, 32)
+AutofarmCat.Position = UDim2.new(0.076, 0,0.657, 0)
+AutofarmCat.TextSize = 20
+AutofarmCat.TextColor3 = Color3.new(1,1,1)
+AutofarmCat.RichText = true
+AutofarmCat.TextWrapped = true
+
+localCat.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+localCat.Size = UDim2.new(0, 118,0, 32)
+localCat.Position = UDim2.new(0.076, 0,0.381, 0)
+localCat.TextSize = 25
+localCat.TextColor3 = Color3.new(1,1,1)
+localCat.RichText = true
+localCat.TextWrapped = true
+
+tpCat.Text = "Teleport"
+ESPCat.Text = "ESP"
+AutofarmCat.Text = "Autofarm"
+localCat.Text = "Local"
+
+tpMap.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+tpMap.Size = UDim2.new(0, 173,0, 45)
+tpMap.Position = UDim2.new(0.109, 0,0.359, 0)
+tpMap.TextSize = 30
+tpMap.TextColor3 = Color3.new(1,1,1)
+tpMap.RichText = true
+tpMap.TextWrapped = true
+
+tpLobby.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+tpLobby.Size = UDim2.new(0, 173,0, 45)
+tpLobby.Position = UDim2.new(0.105, 0,0.19, 0)
+tpLobby.TextSize = 30
+tpLobby.TextColor3 = Color3.new(1,1,1)
+tpLobby.RichText = true
+tpLobby.TextWrapped = true
+
+ESPBtn.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ESPBtn.Size = UDim2.new(0, 173,0, 45)
+ESPBtn.Position = UDim2.new(0.105, 0,0.19, 0)
+ESPBtn.TextSize = 30
+ESPBtn.TextColor3 = Color3.new(1,1,1)
+ESPBtn.RichText = true
+ESPBtn.TextWrapped = true
+
+AutofarmBtn.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+AutofarmBtn.Size = UDim2.new(0, 173,0, 45)
+AutofarmBtn.Position = UDim2.new(0.105, 0,0.19, 0)
+AutofarmBtn.TextSize = 25
+AutofarmBtn.TextColor3 = Color3.new(1,1,1)
+AutofarmBtn.RichText = true
+AutofarmBtn.TextWrapped = true
+
+localFire.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+localFire.Size = UDim2.new(0, 173,0, 45)
+localFire.Position = UDim2.new(0.095, 0,0.397, 0)
+localFire.TextSize = 30
+localFire.TextColor3 = Color3.new(1,1,1)
+localFire.RichText = true
+localFire.TextWrapped = true
+
+localSmoke.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+localSmoke.Size = UDim2.new(0, 173,0, 45)
+localSmoke.Position = UDim2.new(0.095, 0,0.209, 0)
+localSmoke.TextSize = 30
+localSmoke.TextColor3 = Color3.new(1,1,1)
+localSmoke.RichText = true
+localSmoke.TextWrapped = true
+
+mm2Legacy.Size = UDim2.new(0, 173,0, 45)
+mm2Legacy.Position = UDim2.new(0.202, 0,0.163, 0)
+mm2Premium.Size = UDim2.new(0, 173,0, 45)
+mm2Premium.Position = UDim2.new(0.202, 0,0.163, 0)
+
+tpMap.Text = "Map"
+tpLobby.Text = "Lobby"
+ESPBtn.Text = "ESP"
+AutofarmBtn.Text = "Autofarm"
+localFire.Text = "Fire"
+localSmoke.Text = "Smoke"
+
+-- [Set Parents] --
+
+Exploit.Parent = plr.PlayerGui
+
+MM2HUB.Parent = Exploit
+HubsLegacy.Parent = Exploit
+HubsPremium.Parent = Exploit
+Options.Parent = Exploit
+Categories.Parent = MM2HUB
+Tp.Parent = MM2HUB
+ESP.Parent = MM2HUB
+Autofarm.Parent = MM2HUB
+Local.Parent = MM2HUB
+
+Legacy.Parent = Options
+Premium.Parent = Options
+
+mm2Legacy.Parent = HubsLegacy
+mm2Premium.Parent = HubsPremium
+
+TpTitle.Parent = Tp
+ESPTitle.Parent = ESP
+AutofarmTitle.Parent = Autofarm
+LocalTitle.Parent = Local
+
+FrameCorner:Clone().Parent = MM2HUB
+FrameCorner:Clone().Parent = HubsLegacy
+FrameCorner:Clone().Parent = HubsPremium
+FrameCorner:Clone().Parent = Options
+FrameCorner:Clone().Parent = Categories
+FrameCorner:Clone().Parent = Tp
+FrameCorner:Clone().Parent = ESP
+FrameCorner:Clone().Parent = Autofarm
+FrameCorner:Clone().Parent = Local
+
+FrameStroke:Clone().Parent = MM2HUB
+FrameStroke:Clone().Parent = HubsLegacy
+FrameStroke:Clone().Parent = HubsPremium
+FrameStroke:Clone().Parent = Options
+
+BtnStroke:Clone().Parent = Legacy
+BtnStroke:Clone().Parent = Premium
+BtnCorner:Clone().Parent = Premium
+BtnCorner:Clone().Parent = Legacy
+
+BtnStroke:Clone().Parent = mm2Legacy
+BtnStroke:Clone().Parent = mm2Premium
+BtnCorner:Clone().Parent = mm2Legacy
+BtnCorner:Clone().Parent = mm2Premium
+
+BtnStroke:Clone().Parent = tpCat
+BtnStroke:Clone().Parent = ESPCat
+BtnCorner:Clone().Parent = tpCat
+BtnCorner:Clone().Parent = ESPCat
+BtnStroke:Clone().Parent = AutofarmCat
+BtnStroke:Clone().Parent = localCat
+BtnCorner:Clone().Parent = AutofarmCat
+BtnCorner:Clone().Parent = localCat
+
+BtnStroke:Clone().Parent = tpMap
+BtnStroke:Clone().Parent = tpLobby
+BtnStroke:Clone().Parent = ESPBtn
+BtnCorner:Clone().Parent = tpMap
+BtnCorner:Clone().Parent = tpLobby
+BtnCorner:Clone().Parent = ESPBtn
+BtnStroke:Clone().Parent = AutofarmBtn
+BtnStroke:Clone().Parent = localFire
+BtnStroke:Clone().Parent = localSmoke
+BtnCorner:Clone().Parent = AutofarmBtn
+BtnCorner:Clone().Parent = localSmoke
+BtnCorner:Clone().Parent = localFire
+
+Title1.Parent = Options
+Title2.Parent = HubsLegacy
+Title3.Parent = HubsPremium
+
+tpCat.Parent = Categories
+ESPCat.Parent = Categories
+AutofarmCat.Parent = Categories
+localCat.Parent = Categories
+
+tpLobby.Parent = Tp
+tpMap.Parent = Tp
+ESPBtn.Parent = ESP
+AutofarmBtn.Parent = Autofarm
+localFire.Parent = Local
+localSmoke.Parent = Local
+
+-- [Set Visibility] --
+
+
+MM2HUB.Visible = false
+HubsLegacy.Visible = false
+HubsPremium.Visible = false
+ESP.Visible = false
+Autofarm.Visible = false
+Local.Visible = false
+
+
+-- [Functions] --
+
+local WzzHubList = {
+	PremiumUsers = {
+		1636270875,
+		4872202022
+	}
+}
+
+
+Legacy.MouseButton1Click:Connect(function()
+	print("Loading Legacy WZZ Hub")
+	Options.Visible = false
+	HubsLegacy.Visible = true
+end)
+
+Premium.MouseButton1Click:Connect(function()
+	local success = false
+	local userId = plr.UserId
+	for _, user in ipairs(WzzHubList.PremiumUsers) do
+		if user == userId then
+			success = true
+			break
+		end
+	end
+	if success then
+		print("Success")
+		Options.Visible = false
+		HubsPremium.Visible = true
+	else
+		print("Not a premium user")
+	end
+end)
+
+
+mm2Legacy.MouseButton1Click:Connect(function()
+	HubsLegacy.Visible = false
+	MM2HUB.Visible = true
+end)
+
+mm2Premium.MouseButton1Click:Connect(function()
+	HubsPremium.Visible = false
+	MM2HUB.Visible = true
+end)
+
+local coinsCollected = 0
+local autofarm = false
+
+for i,bodyParts in ipairs(plr.Character:GetChildren()) do
+	bodyParts.Touched:Connect(function(name)
+		if name.Name == "Coin" then
+			if coinsCollected < 40 then
+				coinsCollected = coinsCollected +1
+			else
+				coinsCollected = 0
+			end
+		end
+	end)
+end
+
+localSmoke.MouseButton1Click:Connect(function()
+	local char = plr.Character
+	local effect = Instance.new("Smoke")
+	effect.Parent = char:FindFirstChild("HumanoidRootPart")
+end)
+
+localFire.MouseButton1Click:Connect(function()
+	local char = plr.Character
+	local effect = Instance.new("Fire")
+	effect.Parent = char:FindFirstChild("HumanoidRootPart")
+end)
+
+AutofarmBtn.MouseButton1Click:Connect(function()
+	print("Engaging autofarm")
+	local maps = {
+		"House2",
+		"Mansion2",
+		"MilBase",
+		"Bank2",
+		"BioLab",
+		"Factory",
+		"Hospital3",
+		"Hotel2",
+		"nStudio",
+		"Office3",
+		"PoliceStation",
+		"ResearchFacility",
+		"Workplace"
+	}
+	for i,map in ipairs(workspace:GetChildren()) do
+		for i,name in ipairs(maps) do
+			if map.Name == name then
+				local coinServers = map.CoinContainer:GetChildren()
+				while coinsCollected < 40 do
+					local randomCoinServer = coinServers[math.random(1, #coinServers)]
+					local randomCoin = randomCoinServer:FindFirstChild("Coin")
+					plr.Character.Humanoid:MoveTo(randomCoin)
+				end
+				break
+			end
+		end
+	end
+end)
+
+ESPBtn.MouseButton1Click:Connect(function()
+	for i,plrs in ipairs(game.Players:GetPlayers()) do
+		local esp = Instance.new("Highlight")
+
+		local uppertorso = plrs.Character:FindFirstChild("UpperTorso")
+		local torso = plrs.Character:FindFirstChild("Torso")
+
+		if torso then
+			if torso:FindFirstChild("Highlight") then
+				torso.Highlight:Destroy()
+				esp:Clone().Parent = torso
+				plr.Character.Torso:FindFirstChild("Hightlight"):Destroy()
+			else
+				esp:Clone().Parent = torso
+				plr.Character.Torso:Wa("Highlight"):Destroy()
+			end
+		elseif uppertorso then
+			if uppertorso:FindFirstChild("Highlight") then
+				uppertorso.Highlight:Destroy()
+				esp:Clone().Parent = uppertorso
+				plr.Character.UpperTorso:FindFirstChild("Highlight"):Destroy()
+			else
+				esp:Clone().Parent = uppertorso
+				plr.Character.UpperTorso:FindFirstChild("Highlight"):Destroy()
+			end
+		end
+	end
+end)
+
+tpCat.MouseButton1Click:Connect(function()
+	Tp.Visible = true
+	ESP.Visible = false
+	Local.Visible = false
+	Autofarm.Visible = false
+end)
+
+AutofarmCat.MouseButton1Click:Connect(function()
+	Tp.Visible = false
+	ESP.Visible = false
+	Local.Visible = false
+	Autofarm.Visible = true
+end)
+
+ESPCat.MouseButton1Click:Connect(function()
+	Tp.Visible = false
+	ESP.Visible = true
+	Local.Visible = false
+	Autofarm.Visible = false
+end)
+
+localCat.MouseButton1Click:Connect(function()
+	Tp.Visible = false
+	ESP.Visible = false
+	Local.Visible = true
+	Autofarm.Visible = true
+end)
